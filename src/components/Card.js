@@ -6,20 +6,28 @@ class Card extends React.Component {
         this.state = {
             id:'',
             value:'',
-            frontHref:'',
-            backHref:'',
+            frontSrc:'',
+            backSrc:'',
             isFlip:false
         }
     }
 
+    handleOnClick = () => {
+        this.state.isFlip
+            ? this.setState({ isFlip: false })
+            : this.setState({ isFlip: true })
+    }
+
     render() {
         return(
-            <div className="playCard" data-id={this.state.id}>
-                {
-                    this.state.isFlip
-                    ?//render the front of the card
-                    ://render the back of the card
-                }
+            <div className="playCard" data-id={this.state.id} onclick={this.handleOnClick()}>
+                <image src = 
+                    {
+                        this.state.isFlip
+                            ? frontSrc
+                            : backSrc
+                    }
+                />
             </div>
         )
     }
