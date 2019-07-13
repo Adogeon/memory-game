@@ -1,0 +1,17 @@
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%
+}
+
+.playCard {
+    width: 15%;
+    height: 16.75em;
+    padding: auto;
+    margin-bottom: 0.5em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}

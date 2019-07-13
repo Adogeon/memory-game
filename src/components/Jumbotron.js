@@ -11,7 +11,7 @@ class Jumbotron extends React.Component {
                     Rules:
                 </span>
                 <p>
-                    You have 30 seconds to memorize the card locations. Try to find all the pairs.
+                    Try to find all the pairs.
                 </p>
             </div>
         )

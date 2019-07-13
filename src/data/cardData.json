@@ -1,51 +1,50 @@
 [
     {
         "value":  1,
-        "frontSrc" :
+        "imgSrc" :"./pictures/club_7.svg.png"
     },
     {
         "value": 1,
-        "frontSrc":
+        "imgSrc":"./pictures/club_7.svg.png"
     },
     {
         "value": 2,
-        "frontSrc":
+        "imgSrc":"./pictures/club_K.svg.png"
     },
     {
         "value": 2,
-        "frontSrc":
+        "imgSrc":"./pictures/club_K.svg.png"
     },
     {
         "value": 3,
-        "frontSrc":
+        "imgSrc":"./pictures/diamond_4.svg.png"
     },
     {
         "value": 3,
-        "frontSrc":
+        "imgSrc":"./pictures/diamond_4.svg.png"
     },
     {
         "value": 4,
-        "frontSrc":
+        "imgSrc":"./pictures/heart_A.svg.png"
     },
     {
         "value": 4,
-        "frontSrc":
+        "imgSrc":"./pictures/heart_A.svg.png"
     },
     {
         "value": 5,
-        "frontSrc":
+        "imgSrc":"./pictures/spade_7.svg.png"
     },
     {
         "value": 5,
-        "frontSrc":
+        "imgSrc":"./pictures/spade_7.svg.png"
     },
     {
         "value": 6,
-        "frontSrc":
+        "imgSrc":"./pictures/spade_J.svg.png"
     },
     {
         "value": 6,
-        "frontSrc":
-    },
-
+        "imgSrc":"./pictures/spade_J.svg.png"
+    }
 ]
