@@ -4,31 +4,25 @@ class Card extends React.Component {
     constructor(props) {
         super(props) 
         this.state = {
-            key:props.key,
+            key:props.index,
             value:props.value,
-            imgSrc:props.imgSrc,
-            isFlip:false,
-            hasMatched: false
         }
     }
 
-    handleOnClick = (isFlipped) => {
-        if(!this.state.hasMatched) {
-            isFlipped
-                ? this.setState({ isFlip: false })
-                : this.setState({ isFlip: true })
-            this.props.onCheck(this.state.value,this.state.key);
+    handleOnClick = () => {
+        if(!this.props.hasMatched) {
+            this.props.compareAndUpdate(this.state.key,this.state.value)
         }
     }
 
 
     render() {
         return(
-            <div className="playCard" data-id={this.state.id} onClick={()=>this.handleOnClick(this.state.isFlip)}>
+            <div className="playCard" onClick={this.handleOnClick}>
                 {
-                    this.state.isFlip 
-                        ? <img className="img-fluid" src={this.state.imgSrc}/>
-                        : <i class="fas fa-10x fa-question"></i>
+                    this.props.isFlip 
+                        ? <img className="img-fluid" src={this.props.imgSrc} alt="cardimage"/>
+                        : <i className="fas fa-10x fa-question"></i>
                 }
             </div>
         )
